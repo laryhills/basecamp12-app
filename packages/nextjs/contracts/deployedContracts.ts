@@ -7,7 +7,7 @@ const deployedContracts = {
   devnet: {
     Counter: {
       address:
-        "0x7a41a55320b4d39d7df6d58f73daff82d29db66d4130a1146e1399f3da5162e",
+        "0x36d43240e239f5e7209cd202c5f5cc99d32df522845f752c86b0fa53e8c8000",
       abi: [
         {
           type: "impl",
@@ -49,6 +49,17 @@ const deployedContracts = {
               inputs: [],
               outputs: [],
               state_mutability: "external",
+            },
+            {
+              type: "function",
+              name: "get_win_number",
+              inputs: [],
+              outputs: [
+                {
+                  type: "core::integer::u32",
+                },
+              ],
+              state_mutability: "view",
             },
           ],
         },
@@ -116,10 +127,6 @@ const deployedContracts = {
           type: "constructor",
           name: "constructor",
           inputs: [
-            {
-              name: "init_value",
-              type: "core::integer::u32",
-            },
             {
               name: "owner",
               type: "core::starknet::contract_address::ContractAddress",
@@ -225,7 +232,7 @@ const deployedContracts = {
         },
       ],
       classHash:
-        "0x42f2738547c2bcb8413042c479c14f5e9b0dbab1dd828a3dd3d250ef6bb4dc6",
+        "0x4798bb2f1917ece32ced3082060587108b642512e7d5eae4f5d49d22e37e06a",
     },
   },
   sepolia: {
@@ -273,6 +280,17 @@ const deployedContracts = {
               inputs: [],
               outputs: [],
               state_mutability: "external",
+            },
+            {
+              type: "function",
+              name: "get_win_number",
+              inputs: [],
+              outputs: [
+                {
+                  type: "core::integer::u32",
+                },
+              ],
+              state_mutability: "view",
             },
           ],
         },
@@ -340,10 +358,6 @@ const deployedContracts = {
           type: "constructor",
           name: "constructor",
           inputs: [
-            {
-              name: "init_value",
-              type: "core::integer::u32",
-            },
             {
               name: "owner",
               type: "core::starknet::contract_address::ContractAddress",
